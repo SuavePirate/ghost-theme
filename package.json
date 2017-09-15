@@ -1,4 +1,15 @@
 {
     "name": "ghost-theme",
-    "version": "0.0.1"
+    "version": "0.0.1",
+    "engines": {
+        "ghost": ">=1.2.0"
+    },
+    "author": {
+        "name": "Patrick Dunn",
+        "email": "pat.dunn@outlook.com",
+        "url": "https://patwritescode.com"
+    },
+    "devDependencies": {
+        "gulp": "3.9.1"
+    }
 }
