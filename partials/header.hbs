@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-lg-8 col-sm-6 col-xs-12">
+        PatWritesCode
+    </div>
+    <div class="col-lg-4 col-sm-6 col-xs-12">
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="{{@blog.url}}">Home</a>
+                </li>
+                <li>
+                    {{#if @labs.subscribers}}
+                        <a href="#subscribe">Subscribe</a>
+                    {{else}}
+                        <a class="rss-button" href="http://cloud.feedly.com/#subscription/feed/{{@blog.url}}/rss/" target="_blank">Subscribe</a>
+                    {{/if}}
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
