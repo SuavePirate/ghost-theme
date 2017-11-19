@@ -31,8 +31,43 @@
 
     iframe {
         width: 810px; 
-        height: 405px; /* 100/56.25 = 560/315 = 1.778 */
+        height: 405px;
+        border-radius: 4px;
     }
+    
+    mark {
+        background-color: $accent;
+    }
+}
+
+.post-tags {
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+
+    & li {
+        display: inline-block;
+    }
+}
+
+.post-tag {
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: $accent;
+    margin-right: 15px;
+}
+
+.post-tags-section {
+    padding: 15px 0;
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.post-comments {
+    margin: 30px 0;
 }
 
 @media (min-width: 767px) and (max-width: 992px) {

@@ -17,5 +17,32 @@
         <section class="post-content">
             {{content}}
         </section>
+        <section class="post-tags-section">
+            <b>Read more from these categories:</b>
+            {{#if tags}}
+                <ul class="post-tags">
+                    {{#foreach tags}}
+                        <li>
+                            <a href="{{url}}" title="{{name}}" class="post-tag">{{name}}</a>
+                        </li>  
+                    {{/foreach}}
+                </ul>
+            {{/if}}
+        </section>
+        <section class="post-comments">
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = '{{url absolute="true"}}';
+                    this.page.identifier = 'ghost-{{comment_id}}';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://patrickdunnblog.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+        </section>
     </article>
 {{/post}}
