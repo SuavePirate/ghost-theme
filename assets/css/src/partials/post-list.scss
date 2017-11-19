@@ -5,11 +5,6 @@
     margin: 0 auto;
 }
 
-.post-item-col-side {
-    min-width: 65px;
-    width: auto;
-}
-
 .post-item-image {
     padding-bottom: (400px / 800px) * 100%;
     background-size: cover;
@@ -57,6 +52,7 @@
     font-weight: normal;
     vertical-align: top;
     margin-top: 2px;
+    white-space: nowrap;
 }
 
 .post-item-header-col {
@@ -73,4 +69,12 @@
     padding-top: 30px;
     margin-bottom: 30px;
     border-top: 1px solid $gray;
+}
+
+.post-item-date {
+    font-size: $font-small;
+    color: $font-light;
+    vertical-align: middle;
+    font-weight: normal;
+    margin-left: 5px;
 }
