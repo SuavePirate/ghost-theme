@@ -1,0 +1,76 @@
+@import "../variables.scss";
+
+.post-list {
+    max-width: 810px;
+    margin: 0 auto;
+}
+
+.post-item-col-side {
+    min-width: 65px;
+    width: auto;
+}
+
+.post-item-image {
+    padding-bottom: (400px / 800px) * 100%;
+    background-size: cover;
+    border-radius: 4px;
+    background-color: $gray;
+}
+
+.post-item-title {
+    margin: 0;
+}
+
+.post-item-date {
+    color: $font-light;
+    font-size: $font-small;
+}
+
+.post-item-header {
+    margin-bottom: 15px;
+    display: table;
+    width: 100%;
+}
+
+.post-item-footer {
+    margin-top: 15px;
+    display: table;
+}
+.post-item-footer-col {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.post-item-continue {
+    text-align: right;
+}
+
+.post-item-tags {
+    background-color: $accent;
+    color: white;
+    border-radius: 20px;
+    line-height: inherit;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: $font-small;
+    line-height: 1.5em;
+    font-weight: normal;
+    vertical-align: top;
+    margin-top: 2px;
+}
+
+.post-item-header-col {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.post-item-header-tags {
+    text-align: right;
+    vertical-align: top;
+}
+
+.post-item {
+    padding-top: 30px;
+    margin-bottom: 30px;
+    border-top: 1px solid $gray;
+}
