@@ -23,6 +23,11 @@
 .post-content {
     max-width: 810px;
     margin: 0 auto;
+    padding-bottom: 15px;
+
+    p {
+        line-height: 1.6em;
+    }
 
     img {
         max-width: 100%;
@@ -33,6 +38,7 @@
         width: 810px; 
         height: 405px;
         border-radius: 4px;
+        background-color: $gray;
     }
     
     mark {
@@ -42,7 +48,7 @@
 
 .post-tags {
     padding-left: 0;
-    margin-left: 0;
+    margin: 0;
     list-style: none;
 
     & li {
@@ -56,18 +62,25 @@
     color: white;
     background-color: $accent;
     margin-right: 15px;
+    display: inline-block;
+    margin-top: 15px;
+    &:hover {
+        color: white;
+    }
 }
 
 .post-tags-section {
-    padding: 15px 0;
+    padding: 30px 0;
     border-top: 1px solid $gray;
     border-bottom: 1px solid $gray;
     margin-top: 15px;
     text-align: center;
+    background-color: $gray;
+    border-radius: 4px;
 }
 
 .post-comments {
-    margin: 30px 0;
+    margin: 15px 0;
 }
 
 @media (min-width: 767px) and (max-width: 992px) {
