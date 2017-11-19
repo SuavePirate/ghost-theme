@@ -1,3 +1,9 @@
-body {
-    background-color: blue;
-}
+// base
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+@import "./src/base.scss";
+
+// vendor
+@import "./vendor/bootstrap.css";
+
+// partials
+@import "./src/partials/header.scss";
