@@ -1,0 +1,36 @@
+@import "../variables.scss";
+
+.home {
+    display: table;
+    color: inherit;
+    &:hover {
+        color: inherit;
+    }
+}
+
+.home-col {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.home-avatar {
+    background-color: $primary;
+    color: white;
+    line-height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-right: 15px;
+    display: block;
+    text-align: center;
+}
+
+.home-title {
+    display: block;
+}
+
+.home-subtitle {
+    font-style: italic;
+    display: block;
+    font-size: $font-small;
+    color: $font-light;
+}

@@ -1,0 +1,8 @@
+@import "../variables.scss";
+
+.rss-icon {
+    color: $rss;
+    &:hover {
+        color: $rss-hover;
+    }
+}

@@ -1,19 +1,15 @@
 <div class="row header">
     <div class="col-lg-8 col-sm-6 col-xs-12">
-        Patrick Dunn
+        {{> "home"}}
     </div>
     <div class="col-lg-4 col-sm-6 col-xs-12">
-        <nav class="nav">
-            <ul>
-                <li>
+        <nav>
+            <ul class="header-nav">
+                <li class="header-nav-item">
                     <a href="{{@blog.url}}">Home</a>
                 </li>
-                <li>
-                    {{#if @labs.subscribers}}
-                        <a href="#subscribe">Subscribe</a>
-                    {{else}}
-                        <a class="rss-button" href="http://cloud.feedly.com/#subscription/feed/{{@blog.url}}/rss/" target="_blank">Subscribe</a>
-                    {{/if}}
+                <li class="header-nav-item">
+                    {{> "rss_icon"}}
                 </li>
             </ul>
         </nav>

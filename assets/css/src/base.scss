@@ -1,3 +1,16 @@
+@import "./variables.scss";
+body, html {
+    font-size: 16px;
+}
 body, html, p, h1, h2, h3, h4, h5, h6 {
     font-family: 'Source Sans Pro', sans-serif;
+    color: $font;
+}
+
+a {
+    color: $link;
+    &:hover {
+        color: $link-hover;
+        text-decoration: none;
+    }
 }

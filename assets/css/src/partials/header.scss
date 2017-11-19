@@ -1,5 +1,21 @@
+@import "../variables.scss";
+
 .header {
     padding-top: 15px;
     padding-bottom: 15px;
-    border-bottom: 1px solid black;
+}
+
+
+
+.header-nav {
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    line-height: 50px;
+}
+
+.header-nav-item {
+    display: inline-block;
+    margin-left: 15px;
+    color: $font-light;
 }

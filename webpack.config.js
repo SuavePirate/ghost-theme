@@ -14,6 +14,11 @@ module.exports = {
           //resolve-url-loader may be chained before sass-loader if necessary
           use: ['css-loader', 'sass-loader']
         })
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|svg)$/,
+        exclude: /node_modules/,
+        loader: 'url-loader?limit=1024&name=/assets/built/fonts/[name].[ext]'
       }
     ]
   },
