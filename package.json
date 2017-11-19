@@ -1,6 +1,9 @@
 {
     "name": "ghost-theme",
     "version": "0.0.1",
+    "scripts": {
+        "build": "webpack"
+    },
     "engines": {
         "ghost": ">=1.2.0"
     },
@@ -10,6 +13,12 @@
         "url": "https://patwritescode.com"
     },
     "devDependencies": {
-        "gulp": "3.9.1"
+        "css-loader": "^0.28.7",
+        "extract-text-webpack-plugin": "^3.0.2",
+        "gulp": "3.9.1",
+        "node-sass": "^4.7.1",
+        "sass-loader": "^6.0.6",
+        "style-loader": "^0.19.0",
+        "webpack": "^3.8.1"
     }
 }
