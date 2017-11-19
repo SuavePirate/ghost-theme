@@ -1,8 +1,21 @@
 {{!< default}}
 {{#post}}
-<main>
     <article>
-        {{title}}
+        {{#if feature_image}}
+            <figure class="post-image" style="background-image: url({{feature_image}})"></figure>
+        {{/if}}
+        <header>
+            <h2 class="post-title">
+                {{title}}
+            </h2>
+            <div class="post-subtitle">
+                <em>
+                    {{date published_at timeago="true"}} by {{author.name}}
+                </em>
+            </div>
+        </header>
+        <section class="post-content">
+            {{content}}
+        </section>
     </article>
-</main>
 {{/post}}

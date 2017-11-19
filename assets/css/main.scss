@@ -5,6 +5,7 @@
 // vendor
 @import "./vendor/bootstrap.css";
 @import "./vendor/font-awesome.css";
+@import "./vendor/prism.css";
 
 // partials
 @import "./src/partials/header.scss";
@@ -13,3 +14,6 @@
 @import "./src/partials/post-list.scss";
 @import "./src/partials/twitter-icon.scss";
 @import "./src/partials/github-icon.scss";
+@import "./src/partials/footer.scss";
+@import "./src/partials/pagination.scss";
+@import "./src/partials/post.scss";

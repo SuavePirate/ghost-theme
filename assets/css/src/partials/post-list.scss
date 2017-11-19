@@ -10,6 +10,7 @@
     background-size: cover;
     border-radius: 4px;
     background-color: $gray;
+    display: block;
 }
 
 .post-item-title {
@@ -77,4 +78,10 @@
     vertical-align: middle;
     font-weight: normal;
     margin-left: 5px;
+    white-space: nowrap;
+}
+
+.post-item-excerpt {
+    line-height: 1.6em;
+    margin-top: 15px;
 }

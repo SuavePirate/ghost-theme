@@ -19,14 +19,15 @@
                 {{/if}}
             </header>
             {{#if feature_image}}
-                <div class="post-item-image" style="background-image: url({{feature_image}})"></div>
+                <a href="{{url}}" class="post-item-image" style="background-image: url({{feature_image}})"></a>
             {{/if}}
             <section>
-                <p>{{excerpt words="100"}}...</p>
+                <p class="post-item-excerpt">{{excerpt words="100"}}...</p>
             </section>
             <footer class="post-item-continue">
                 <a href={{url}}>Continue reading</a>
             </footer>
         </article>
     {{/foreach}}
+    {{pagination}}
 </div>

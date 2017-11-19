@@ -5,17 +5,29 @@
     padding-bottom: 15px;
 }
 
-
-
 .header-nav {
     list-style: none;
     text-align: right;
     margin: 0;
     line-height: 50px;
+    padding-left: 0;
 }
 
 .header-nav-item {
     display: inline-block;
     margin-left: 15px;
     color: $font-light;
+}
+
+@media (max-width:  767px) {
+    .header-nav {
+        text-align: left;
+        margin-left: 65px;
+        line-height: 0;
+        margin-top: 5px;
+    }
+    .header-nav-item {
+        margin-left: 0;
+        margin-right: 15px;
+    }
 }

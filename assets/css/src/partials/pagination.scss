@@ -1,0 +1,33 @@
+@import "../variables.scss";
+
+.pagination {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    border-top: 1px solid $gray;
+}
+
+.pagination-col {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 75px;
+    width: 33%;
+
+    &:nth-of-type(2) {
+        border-left: 1px solid $gray;
+        border-right: 1px solid $gray;
+    }
+}
+
+.pagination-icon {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+@media (max-width:  767px) {
+    .pagination-text {
+        display: none;
+    }
+}
