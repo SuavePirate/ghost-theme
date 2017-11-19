@@ -1,4 +1,7 @@
 @import "./variables.scss";
+html {
+    border-top: 4px solid $primary;
+}
 body, html {
     font-size: 16px;
 }
@@ -13,4 +16,9 @@ a {
         color: $link-hover;
         text-decoration: none;
     }
+}
+
+main {
+    max-width: 800px;
+    margin: 60px auto;
 }

@@ -1,5 +1,6 @@
 {{!< default}}
 
-<main>
-    hello
-</main>
+
+{{#foreach posts}}
+    {{> "post-item"}}
+{{/foreach}}
